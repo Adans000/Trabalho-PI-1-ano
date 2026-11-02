@@ -1,0 +1,760 @@
+/* ========================================
+   GERAL
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f7efd9;
+    color: #292d26;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+.cabecalho {
+    background-color: #f7efd9;
+    padding: 10px 8px;
+    border-bottom: 1px solid #d8ccb0;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 15px;
+    color: #161b16;
+}
+
+.logo strong {
+    font-size: 15px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu a {
+    color: #222;
+    text-decoration: none;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: #728b61;
+}
+
+
+/* ========================================
+   HERO
+======================================== */
+
+.divulgue-hero {
+    position: relative;
+    height: 132px;
+    overflow: hidden;
+}
+
+.divulgue-imagem {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(248, 242, 215, 0.96),
+            rgba(248, 242, 215, 0.25)
+        ),
+        url("img/divulgue.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.divulgue-texto {
+    position: relative;
+    z-index: 2;
+
+    width: 48%;
+
+    padding: 5px 0;
+}
+
+.divulgue-texto span {
+    color: #d29e4d;
+
+    font-size: 8px;
+
+    font-weight: 600;
+}
+
+.divulgue-texto h1 {
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    line-height: 0.95;
+
+    font-weight: normal;
+
+    margin: 5px 0 7px;
+}
+
+.divulgue-texto p {
+    font-size: 8px;
+
+    line-height: 1.25;
+
+    margin-bottom: 8px;
+}
+
+.botao-principal {
+    display: inline-block;
+
+    background-color: #d6ae63;
+
+    color: #2c2c22;
+
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    padding: 6px 9px;
+
+    font-size: 8px;
+
+    border: 1px solid #b38d4a;
+}
+
+
+/* ========================================
+   BENEFÍCIOS
+======================================== */
+
+.beneficios {
+    background-color: #f5f0df;
+
+    padding: 10px 0 12px;
+}
+
+.beneficio {
+    text-align: center;
+
+    padding: 0 4px;
+}
+
+.icone-beneficio {
+    width: 31px;
+    height: 31px;
+
+    margin: auto;
+
+    border-radius: 50%;
+
+    background-color: #dce1ce;
+
+    color: #667a5b;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-beneficio i {
+    font-size: 15px;
+}
+
+.beneficio h2 {
+    font-size: 8px;
+
+    line-height: 1.1;
+
+    margin: 5px 0;
+
+    font-weight: 600;
+
+    color: #4d6647;
+}
+
+.beneficio p {
+    font-size: 7px;
+
+    line-height: 1.25;
+
+    color: #77906f;
+
+    margin: 0;
+}
+
+
+/* ========================================
+   CADASTRO
+======================================== */
+
+.cadastro {
+    background-color: #f7efd9;
+}
+
+.imagem-cadastro {
+    position: relative;
+
+    height: 175px;
+
+    overflow: hidden;
+}
+
+.imagem-cadastro img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.texto-imagem {
+    position: absolute;
+
+    left: 7px;
+    bottom: 8px;
+
+    color: white;
+
+    text-shadow: 0 1px 3px #222;
+}
+
+.texto-imagem h2 {
+    font-family: Georgia, serif;
+
+    font-size: 17px;
+
+    line-height: 0.95;
+
+    margin: 0;
+}
+
+
+/* ========================================
+   FORMULÁRIO
+======================================== */
+
+.formulario {
+    height: 175px;
+
+    padding: 6px 7px;
+
+    background-color: #f7efd9;
+}
+
+.formulario > span {
+    color: #ce9b48;
+
+    font-size: 8px;
+
+    font-weight: 600;
+}
+
+.formulario h2 {
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    line-height: 1;
+
+    margin: 2px 0 3px;
+}
+
+.formulario > p {
+    font-size: 8px;
+
+    line-height: 1.15;
+
+    margin-bottom: 5px;
+}
+
+.formulario label {
+    display: block;
+
+    font-size: 8px;
+
+    margin-top: 3px;
+
+    margin-bottom: 2px;
+
+    color: #444;
+}
+
+.formulario input,
+.formulario select {
+    width: 100%;
+
+    height: 20px;
+
+    border: 1px solid #999;
+
+    border-radius: 7px;
+
+    background-color: white;
+
+    outline: none;
+
+    padding: 2px 5px;
+
+    font-size: 8px;
+}
+
+.formulario input::placeholder {
+    color: #777;
+}
+
+.formulario button {
+    width: 100%;
+
+    margin-top: 5px;
+
+    height: 22px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #d5b064;
+
+    color: white;
+
+    font-size: 8px;
+}
+
+
+/* ========================================
+   O QUE PRECISA
+======================================== */
+
+.precisa {
+    background-color: #f7f3e5;
+
+    padding: 8px 0 10px;
+}
+
+.precisa h2 {
+    font-family: Georgia, serif;
+
+    font-size: 17px;
+
+    line-height: 0.95;
+
+    color: #6f8663;
+
+    margin-bottom: 7px;
+}
+
+.precisa ul {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+.precisa li {
+    font-size: 9px;
+
+    line-height: 1.35;
+
+    margin-bottom: 2px;
+}
+
+.precisa li::before {
+    content: "✓";
+
+    font-weight: bold;
+
+    margin-right: 4px;
+
+    color: #5f7854;
+}
+
+.folhagem {
+    text-align: center;
+
+    color: #75896b;
+}
+
+.folhagem i {
+    font-size: 65px;
+}
+
+
+/* ========================================
+   FINAL
+======================================== */
+
+.final-divulgue {
+    background-color: #ead39a;
+
+    padding: 10px 0 12px;
+}
+
+.final-divulgue h2 {
+    color: white;
+
+    font-family: Georgia, serif;
+
+    font-size: 17px;
+
+    line-height: 1;
+
+    max-width: 270px;
+
+    margin-bottom: 7px;
+}
+
+.linha {
+    width: 70%;
+
+    height: 1px;
+
+    background-color: #829d64;
+
+    margin-bottom: 10px;
+}
+
+.final-divulgue a {
+    display: block;
+
+    width: fit-content;
+
+    margin-left: auto;
+
+    background-color: #d8b567;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 6px 11px;
+
+    border-radius: 10px;
+
+    font-size: 8px;
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+footer {
+    background-color: #f7efd9;
+
+    text-align: center;
+
+    padding: 18px;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 10px;
+}
+
+footer i {
+    font-size: 18px;
+
+    color: #506847;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (min-width: 576px) {
+
+    .cabecalho {
+        padding: 12px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+        line-height: 18px;
+    }
+
+    .logo strong {
+        font-size: 19px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+
+    /* HERO */
+
+    .divulgue-hero {
+        height: 240px;
+    }
+
+    .divulgue-texto {
+        width: 45%;
+
+        padding: 18px 25px;
+    }
+
+    .divulgue-texto span {
+        font-size: 12px;
+    }
+
+    .divulgue-texto h1 {
+        font-size: 32px;
+    }
+
+    .divulgue-texto p {
+        font-size: 12px;
+    }
+
+    .botao-principal {
+        font-size: 11px;
+        padding: 8px 14px;
+    }
+
+
+    /* BENEFÍCIOS */
+
+    .beneficios {
+        padding: 18px 0;
+    }
+
+    .icone-beneficio {
+        width: 42px;
+        height: 42px;
+    }
+
+    .icone-beneficio i {
+        font-size: 19px;
+    }
+
+    .beneficio h2 {
+        font-size: 12px;
+    }
+
+    .beneficio p {
+        font-size: 10px;
+    }
+
+
+    /* CADASTRO */
+
+    .imagem-cadastro,
+    .formulario {
+        height: 280px;
+    }
+
+    .texto-imagem h2 {
+        font-size: 27px;
+    }
+
+    .formulario {
+        padding: 15px;
+    }
+
+    .formulario > span {
+        font-size: 12px;
+    }
+
+    .formulario h2 {
+        font-size: 27px;
+    }
+
+    .formulario > p {
+        font-size: 11px;
+    }
+
+    .formulario label {
+        font-size: 11px;
+    }
+
+    .formulario input,
+    .formulario select {
+        height: 29px;
+
+        font-size: 11px;
+    }
+
+    .formulario button {
+        height: 30px;
+
+        font-size: 10px;
+    }
+
+
+    /* PRECISA */
+
+    .precisa {
+        padding: 20px 0;
+    }
+
+    .precisa h2 {
+        font-size: 25px;
+    }
+
+    .precisa li {
+        font-size: 12px;
+    }
+
+    .folhagem i {
+        font-size: 100px;
+    }
+
+
+    /* FINAL */
+
+    .final-divulgue {
+        padding: 20px 0;
+    }
+
+    .final-divulgue h2 {
+        font-size: 25px;
+        max-width: 500px;
+    }
+
+    .final-divulgue a {
+        font-size: 11px;
+    }
+
+}
+
+
+/* ========================================
+   DESKTOP
+======================================== */
+
+@media (min-width: 992px) {
+
+    .cabecalho {
+        padding: 15px 40px;
+    }
+
+    .menu {
+        gap: 35px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+
+    .divulgue-hero {
+        height: 350px;
+    }
+
+    .divulgue-texto {
+        padding: 50px 8%;
+    }
+
+    .divulgue-texto span {
+        font-size: 15px;
+    }
+
+    .divulgue-texto h1 {
+        font-size: 50px;
+    }
+
+    .divulgue-texto p {
+        font-size: 15px;
+
+        max-width: 430px;
+    }
+
+    .botao-principal {
+        font-size: 13px;
+        padding: 10px 18px;
+    }
+
+
+    .beneficio h2 {
+        font-size: 16px;
+    }
+
+    .beneficio p {
+        font-size: 12px;
+    }
+
+
+    .imagem-cadastro,
+    .formulario {
+        height: 400px;
+    }
+
+    .formulario {
+        padding: 25px;
+    }
+
+    .formulario h2 {
+        font-size: 35px;
+    }
+
+    .formulario > p {
+        font-size: 14px;
+    }
+
+    .formulario label {
+        font-size: 13px;
+    }
+
+    .formulario input,
+    .formulario select {
+        height: 36px;
+
+        font-size: 13px;
+    }
+
+    .formulario button {
+        height: 38px;
+
+        font-size: 12px;
+    }
+
+
+    .texto-imagem {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .texto-imagem h2 {
+        font-size: 38px;
+    }
+
+
+    .precisa h2 {
+        font-size: 32px;
+    }
+
+    .precisa li {
+        font-size: 14px;
+    }
+
+
+    .final-divulgue h2 {
+        font-size: 32px;
+    }
+
+}

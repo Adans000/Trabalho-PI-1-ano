@@ -1,0 +1,717 @@
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7efd9;
+    color: #292d26;
+    font-family: Arial, sans-serif;
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+.cabecalho {
+    background-color: #f7efd9;
+
+    padding: 10px 8px;
+
+    border-bottom: 1px solid #d8ccb0;
+}
+
+.logo {
+    font-family: Georgia, serif;
+
+    font-size: 16px;
+
+    line-height: 15px;
+
+    color: #161b16;
+}
+
+.logo strong {
+    font-size: 15px;
+}
+
+.menu {
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.menu a {
+    color: #222;
+
+    text-decoration: none;
+
+    font-size: 9px;
+
+    font-weight: 600;
+}
+
+.menu a:hover {
+    color: #728b61;
+}
+
+
+/* ========================================
+   BANNER
+======================================== */
+
+.banner {
+    position: relative;
+
+    height: 145px;
+
+    overflow: hidden;
+}
+
+.banner-imagem {
+    position: absolute;
+
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(239, 218, 166, 0.95),
+            rgba(239, 218, 166, 0.25)
+        ),
+        url("img/banner.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.banner-texto {
+    position: relative;
+
+    z-index: 2;
+
+    padding: 10px 5px;
+}
+
+.banner h1 {
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    line-height: 0.95;
+
+    font-weight: normal;
+
+    color: #171a16;
+}
+
+
+/* ========================================
+   BARRA DE PESQUISA
+======================================== */
+
+.pesquisa {
+    position: relative;
+
+    z-index: 5;
+
+    margin-top: -1px;
+
+    padding: 10px 8px;
+}
+
+.barra-pesquisa {
+    width: 100%;
+
+    max-width: 500px;
+
+    height: 46px;
+
+    margin: auto;
+
+    background-color: white;
+
+    border: 1px solid #777;
+
+    border-radius: 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 4px 8px;
+}
+
+.barra-pesquisa i {
+    font-size: 18px;
+
+    margin: 0 8px;
+
+    color: #333;
+}
+
+.barra-pesquisa input {
+    flex: 1;
+
+    width: 100%;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 13px;
+
+    color: #333;
+}
+
+.barra-pesquisa input::placeholder {
+    color: #555;
+}
+
+.barra-pesquisa button {
+    background-color: #829d64;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 20px;
+
+    padding: 8px 15px;
+
+    font-size: 11px;
+
+    white-space: nowrap;
+}
+
+
+/* ========================================
+   CATEGORIAS / FILTROS
+======================================== */
+
+.categorias {
+    padding-top: 4px;
+
+    padding-bottom: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.filtros {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    overflow: hidden;
+}
+
+
+/* CÍRCULOS DOS ÍCONES */
+
+.filtro {
+    width: 36px;
+
+    height: 36px;
+
+    flex-shrink: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #d8c99a;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 16px;
+
+    color: #555;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+/* Efeito ao passar o mouse */
+
+.filtro:hover {
+    transform: scale(1.08);
+}
+
+
+/* BOTÃO "TODAS" */
+
+.filtro.ativo {
+    width: 36px;
+    height: 36px;
+
+    border-radius: 20px;
+
+    padding: 0;
+
+    font-size: 10px;
+
+    background-color: #dfcf99;
+
+}
+/* TÍTULO "NOSSOS COMÉRCIOS" */
+
+.categorias h2 {
+    color: #69845c;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    margin: 0;
+}
+
+
+/* ========================================
+   CARDS
+======================================== */
+
+.comercios {
+    padding-bottom: 25px;
+}
+
+.card-comercio {
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    height: 100%;
+
+    box-shadow:
+        0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.card-comercio img {
+    width: 100%;
+
+    height: 105px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.card-conteudo {
+    padding: 7px 8px 9px;
+}
+
+
+/* ETIQUETA DA CATEGORIA */
+
+.categoria-badge {
+    display: inline-block;
+
+    padding: 4px 8px;
+
+    border-radius: 10px;
+
+    font-size: 9px;
+
+    line-height: 1;
+}
+
+.categoria-badge.verde {
+    background-color: #a8c398;
+}
+
+.categoria-badge.rosa {
+    background-color: #e6a1a5;
+}
+
+.categoria-badge.bege {
+    background-color: #ddcf9d;
+}
+
+
+/* NOME DO COMÉRCIO */
+
+.card-conteudo h3 {
+    font-size: 12px;
+
+    margin-top: 5px;
+
+    margin-bottom: 4px;
+
+    line-height: 1.1;
+
+    font-weight: 600;
+}
+
+
+/* DESCRIÇÃO */
+
+.card-conteudo p {
+    font-size: 9px;
+
+    line-height: 1.3;
+
+    min-height: 34px;
+
+    margin-bottom: 8px;
+
+    color: #444;
+}
+
+
+/* BOTÃO DOS CARDS */
+
+.card-conteudo button {
+    width: 100%;
+
+    border: none;
+
+    background-color: #e6d38e;
+
+    color: #222;
+
+    border-radius: 12px;
+
+    padding: 6px 3px;
+
+    font-size: 9px;
+
+    cursor: pointer;
+}
+
+.card-conteudo button:hover {
+    background-color: #d9c47e;
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+footer {
+    padding: 20px;
+
+    text-align: center;
+
+    background-color: #f7efd9;
+}
+
+footer p {
+    margin: 0;
+
+    font-size: 10px;
+}
+
+footer i {
+    font-size: 18px;
+
+    color: #506847;
+}
+
+
+/* ========================================
+   CELULAR
+======================================== */
+
+@media (min-width: 576px) {
+
+    /* CABEÇALHO */
+
+    .cabecalho {
+        padding: 12px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+
+        line-height: 18px;
+    }
+
+    .logo strong {
+        font-size: 19px;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+
+    /* BANNER */
+
+    .banner {
+        height: 230px;
+    }
+
+    .banner-texto {
+        padding: 25px 30px;
+    }
+
+    .banner h1 {
+        font-size: 34px;
+    }
+
+
+    /* PESQUISA */
+
+    .barra-pesquisa {
+        height: 50px;
+    }
+
+    .barra-pesquisa input {
+        font-size: 14px;
+    }
+
+    .barra-pesquisa button {
+        font-size: 12px;
+
+        padding: 8px 16px;
+    }
+
+
+    /* FILTRO */
+
+    .filtros {
+        gap: 8px;
+    }
+
+    .filtro {
+        width: 40px;
+
+        height: 40px;
+
+        font-size: 17px;
+    }
+
+    .filtro.ativo {
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+}
+
+    .categorias h2 {
+        font-size: 17px;
+    }
+
+
+    /* CARDS */
+
+    .card-comercio img {
+        height: 160px;
+    }
+
+    .card-conteudo {
+        padding: 10px;
+    }
+
+    .categoria-badge {
+        font-size: 10px;
+    }
+
+    .card-conteudo h3 {
+        font-size: 14px;
+    }
+
+    .card-conteudo p {
+        font-size: 10px;
+
+        min-height: 38px;
+    }
+
+    .card-conteudo button {
+        font-size: 10px;
+
+        padding: 7px;
+    }
+
+}
+
+
+/* ========================================
+   DESKTOP
+======================================== */
+
+@media (min-width: 992px) {
+
+    /* CABEÇALHO */
+
+    .cabecalho {
+        padding: 15px 40px;
+    }
+
+    .menu {
+        gap: 35px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+
+    /* BANNER */
+
+    .banner {
+        height: 350px;
+    }
+
+    .banner-texto {
+        padding: 55px 8%;
+    }
+
+    .banner h1 {
+        font-size: 52px;
+    }
+
+
+    /* PESQUISA */
+
+    .pesquisa {
+        margin-top: -5px;
+    }
+
+    .barra-pesquisa {
+        height: 54px;
+    }
+
+    .barra-pesquisa i {
+        font-size: 20px;
+    }
+
+    .barra-pesquisa input {
+        font-size: 15px;
+    }
+
+    .barra-pesquisa button {
+        font-size: 12px;
+
+        padding: 9px 17px;
+    }
+
+
+    /* FILTROS */
+
+    .categorias {
+        padding-top: 8px;
+
+        padding-bottom: 15px;
+    }
+
+    .filtros {
+        gap: 10px;
+    }
+
+    .filtro {
+        width: 52px;
+
+        height: 52px;
+
+        font-size: 28px;
+    }
+
+    .filtro.ativo {
+    width: 52px;
+
+    height: 52px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+}
+    .categorias h2 {
+        font-size: 20px;
+    }
+
+
+    /* CARDS */
+
+    .card-comercio img {
+        height: 210px;
+    }
+
+    .card-conteudo {
+        padding: 12px;
+    }
+
+    .categoria-badge {
+        font-size: 11px;
+
+        padding: 5px 9px;
+    }
+
+    .card-conteudo h3 {
+        font-size: 17px;
+    }
+
+    .card-conteudo p {
+        font-size: 12px;
+
+        min-height: 42px;
+    }
+
+    .card-conteudo button {
+        font-size: 11px;
+
+        padding: 7px;
+    }
+
+}
+
+/* ========================================
+   CARDS X
+======================================== */
+
+.card-comercio:has(.categoria-badge.verde) {
+    background-color: #000;
+    color: white;
+}
+
+.card-comercio:has(.categoria-badge.verde) .card-conteudo h3 {
+    color: white;
+}
+
+.card-comercio:has(.categoria-badge.verde) .card-conteudo p {
+    color: #ddd;
+}
+
+.card-comercio:has(.categoria-badge.verde) .card-conteudo button {
+    background-color: #222;
+    color: white;
+}
+
+.card-comercio:has(.categoria-badge.verde) .card-conteudo button:hover {
+    background-color: #333;
+}
