@@ -300,6 +300,11 @@ body {
     padding-bottom: 25px;
 }
 
+.comercios a{
+    color: #151b16;
+    text-decoration: none;
+}
+
 .card-comercio {
     background-color: white;
 

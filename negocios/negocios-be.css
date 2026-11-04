@@ -300,6 +300,11 @@ body {
     padding-bottom: 25px;
 }
 
+.comercios a{
+    color: #151b16;
+    text-decoration: none;
+}
+
 .card-comercio {
     background-color: white;
 
@@ -687,30 +692,4 @@ footer i {
         padding: 7px;
     }
 
-}
-
-/* ========================================
-   CARDS X
-======================================== */
-
-.card-comercio:has(.categoria-badge.bege) {
-    background-color: #000;
-    color: white;
-}
-
-.card-comercio:has(.categoria-badge.bege) .card-conteudo h3 {
-    color: white;
-}
-
-.card-comercio:has(.categoria-badge.bege) .card-conteudo p {
-    color: #ddd;
-}
-
-.card-comercio:has(.categoria-badge.bege) .card-conteudo button {
-    background-color: #222;
-    color: white;
-}
-
-.card-comercio:has(.categoria-badge.bege) .card-conteudo button:hover {
-    background-color: #333;
 }

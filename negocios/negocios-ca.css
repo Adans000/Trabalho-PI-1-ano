@@ -688,3 +688,27 @@ footer i {
     }
 
 }
+
+/* CARD 9 - PRETO */
+
+.comercios .card-comercio.card-preto {
+    background: #000000 !important;
+    color: #ffffff !important;
+}
+
+.comercios .card-comercio.card-preto .card-conteudo {
+    background: #000000 !important;
+}
+
+.comercios .card-comercio.card-preto h3 {
+    color: #ffffff !important;
+}
+
+.comercios .card-comercio.card-preto p {
+    color: #fafafa !important;
+}
+
+.comercios .card-comercio.card-preto button {
+    background: #333333 !important;
+    color: #ffffff !important;
+}

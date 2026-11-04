@@ -690,28 +690,3 @@ footer i {
 
 }
 
-/* ========================================
-   CARDS X
-======================================== */
-
-.card-comercio:has(.categoria-badge.verde) {
-    background-color: #000;
-    color: white;
-}
-
-.card-comercio:has(.categoria-badge.verde) .card-conteudo h3 {
-    color: white;
-}
-
-.card-comercio:has(.categoria-badge.verde) .card-conteudo p {
-    color: #ddd;
-}
-
-.card-comercio:has(.categoria-badge.verde) .card-conteudo button {
-    background-color: #222;
-    color: white;
-}
-
-.card-comercio:has(.categoria-badge.verde) .card-conteudo button:hover {
-    background-color: #333;
-}

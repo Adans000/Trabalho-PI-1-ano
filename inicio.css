@@ -40,6 +40,13 @@ button {
     font-size: 17px;
 
     line-height: 15px;
+
+    
+}
+
+.logo a {
+    color: #151b16;
+    text-decoration: none;
 }
 
 .logo strong {

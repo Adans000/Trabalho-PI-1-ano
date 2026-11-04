@@ -434,30 +434,6 @@ footer i {
     color: #506847;
 }
 
-/* ========================================
-   Card X
-======================================== */
-
-/* SOMENTE O CARD 8 */
-
-.card-preto {
-    background-color: #000;
-}
-
-.card-preto .card-conteudo h3 {
-    color: #fff;
-}
-
-.card-preto .card-conteudo p {
-    color: #ddd;
-}
-
-.card-preto .card-conteudo button {
-    background-color: #333;
-    color: #fff;
-}
-
-
 
 /* ========================================
    CELULAR
