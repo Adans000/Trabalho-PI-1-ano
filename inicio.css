@@ -870,3 +870,81 @@ footer i {
     }
 
 }
+
+/* CELULAR 2.0 denovo n aguento mais mano ;( */
+@media (max-width: 767px) {
+
+    .cabecalho {
+        padding: 12px 10px;
+    }
+
+    .cabecalho .row {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cabecalho .row > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 19px;
+        line-height: 18px;
+    }
+
+    .logo strong {
+        font-size: 18px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+    }
+
+    .menu a {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .banner {
+        display: flex;
+        align-items: stretch;
+        height: auto;
+        min-height: 260px;
+        overflow: hidden;
+    }
+
+    .banner-texto {
+        width: 65%;
+        padding: 25px 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .banner h1 {
+        font-size: clamp(21px, 6vw, 28px);
+        line-height: 1.12;
+        margin-bottom: 0;
+    }
+
+    .banner p {
+        font-size: 11px;
+        line-height: 1.4;
+        margin-top: 12px;
+    }
+
+    .banner > img {
+        width: 35%;
+        height: auto;
+        object-fit: cover;
+        align-self: stretch;
+    }
+}
