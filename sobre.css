@@ -255,7 +255,7 @@ button {
 .FT h2 {
     font-family: Georgia, serif;
     font-size: 50px;
-    line-height: 1.2;
+    line-height: 1;
     font-weight: normal;
     margin: 0;
 }
@@ -263,6 +263,10 @@ button {
 .FT strong {
     display: block;
     font-weight: bold;
+}
+
+.FT a :hover {
+    color: #829d64;
 }
 
 /* TEXTO DA DIREITA */
