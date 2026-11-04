@@ -306,63 +306,25 @@ body {
 
 }
 
-/* CELULAR 2.0 denovo n aguento mais mano ;( */
-@media (max-width: 767px) {
-
-    .cabecalho {
-        padding: 12px 10px;
-    }
-
-    .cabecalho .row {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .cabecalho .row > div {
-        width: 100%;
-        text-align: center;
-    }
-
-    .logo {
-        font-size: 19px;
-        line-height: 18px;
-    }
-
-    .logo strong {
-        font-size: 18px;
-    }
-
-    .menu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 10px 16px;
-    }
-
-    .menu a {
-        font-size: 11px;
-    }
-}
-
-
 /* ========================================
-   CORREÇÕES PARA CELULAR
+   Msm blg de celular denovo só q melhor ;)
 ======================================== */
 
 @media (max-width: 767px) {
 
     /* CABEÇALHO */
     .cabecalho {
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 12px;
-        padding: 12px;
+        padding: 12px 15px;
     }
 
     .logo {
         font-size: 17px;
         line-height: 17px;
+        text-align: left;
     }
 
     .logo strong {
@@ -370,10 +332,11 @@ body {
     }
 
     .menu {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 8px 12px;
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px 14px;
     }
 
     .menu a {
@@ -389,7 +352,6 @@ body {
     .titulo-pagina h1 {
         font-size: 25px;
         line-height: 1.15;
-        overflow-wrap: break-word;
     }
 
     .titulo-pagina p {
@@ -419,14 +381,13 @@ body {
 
     .rodape-superior {
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        align-items: flex-start;
+        gap: 18px;
     }
 
     .logo-rodape {
         font-size: 20px;
         line-height: 20px;
-        text-align: center;
     }
 
     .logo-rodape strong {
@@ -434,7 +395,6 @@ body {
     }
 
     .menu-rodape {
-        justify-content: center;
         flex-wrap: wrap;
         gap: 12px;
     }
@@ -446,14 +406,9 @@ body {
 
     .rodape-inferior {
         flex-direction: column;
-        justify-content: center;
         gap: 12px;
         margin-top: 22px;
         text-align: center;
-    }
-
-    .redes-sociais {
-        justify-content: center;
     }
 
     .redes-sociais a {
