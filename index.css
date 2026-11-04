@@ -1,9 +1,13 @@
+
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     margin: 0;
@@ -12,9 +16,9 @@ body {
 }
 
 
-/* =========================
+/* ========================================
    CABEÇALHO
-========================= */
+======================================== */
 
 .Titulo {
     background-color: #f3cb81;
@@ -23,34 +27,31 @@ body {
     flex-direction: column;
     align-items: center;
 
-    padding: 10px 20px 8px;
+    padding: 15px 20px 12px;
 
     border-bottom: 2px solid #f7edcf;
 }
-
 
 .Titulo h1 {
     color: #fffaf0;
 
     font-family: Georgia, serif;
-
-    font-size: clamp(38px, 12vw, 55px);
+    font-size: clamp(38px, 7vw, 60px);
 
     font-weight: bold;
 
-    margin: 0 0 5px 0;
+    margin: 0 0 10px 0;
 
     line-height: 1;
 
     white-space: nowrap;
 }
 
-
 .Titulo ul {
     display: flex;
     flex-direction: row;
 
-    gap: clamp(25px, 7vw, 70px);
+    gap: clamp(25px, 7vw, 75px);
 
     list-style-type: none;
 
@@ -62,30 +63,27 @@ body {
     width: 100%;
 }
 
-
 .Titulo li a {
     color: #17130e;
 
     text-decoration: none;
 
     font-family: Georgia, serif;
-
-    font-size: 14px;
+    font-size: 16px;
 
     font-weight: bold;
 
     white-space: nowrap;
 }
 
-
 .Titulo li a:hover {
     text-decoration: underline;
 }
 
 
-/* =========================
+/* ========================================
    PARTE PRINCIPAL
-========================= */
+======================================== */
 
 .amarelo {
     background-color: #f8e8bb;
@@ -95,13 +93,17 @@ body {
 
     align-items: center;
 
-    padding: 35px 25px 40px;
+    padding: 55px 50px 60px;
 
     overflow: hidden;
 }
 
 
-/* TEXTO */
+/* TEXTO PRINCIPAL */
+
+.amarelo a{
+    text-decoration: none;
+}
 
 .texto-amarelo {
     width: 57%;
@@ -111,21 +113,19 @@ body {
     z-index: 3;
 }
 
-
 .texto-amarelo h2 {
     color: #493a2f;
 
     font-family: Georgia, serif;
 
-    font-size: clamp(28px, 6vw, 55px);
+    font-size: clamp(35px, 6vw, 65px);
 
-    line-height: 0.95;
+    line-height: 0.98;
 
     font-weight: bold;
 
-    margin: 0 0 25px 0;
+    margin: 0 0 28px 0;
 }
-
 
 .texto-amarelo h2 span {
     color: #fffaf0;
@@ -134,28 +134,26 @@ body {
 
     text-decoration-thickness: 2px;
 
-    text-underline-offset: 4px;
+    text-underline-offset: 5px;
 }
-
 
 .texto-amarelo p {
     color: #17130e;
 
-    font-size: clamp(14px, 2.5vw, 21px);
+    font-size: clamp(16px, 2.5vw, 23px);
 
     font-style: italic;
 
-    line-height: 1.35;
+    line-height: 1.45;
 
     width: 100%;
 
-    max-width: 480px;
+    max-width: 500px;
 
-    margin: 0 0 25px 0;
+    margin: 0 0 30px 0;
 
     font-family: Arial, sans-serif;
 }
-
 
 .texto-amarelo button {
     background-color: #fffaf1;
@@ -164,9 +162,9 @@ body {
 
     border-radius: 30px;
 
-    padding: 10px 18px;
+    padding: 13px 23px;
 
-    font-size: 15px;
+    font-size: 17px;
 
     color: #17130e;
 
@@ -174,24 +172,30 @@ body {
 
     align-items: center;
 
-    gap: 10px;
+    gap: 12px;
 
     cursor: pointer;
 
     font-family: Arial, sans-serif;
+
+    transition: 0.3s;
 }
 
+.texto-amarelo button:hover {
+    background-color: #e9d8b2;
+    transform: translateY(-3px);
+}
 
 .texto-amarelo button span {
-    font-size: 25px;
+    font-size: 27px;
 
     line-height: 15px;
 }
 
 
-/* =========================
+/* ========================================
    IMAGEM PRINCIPAL
-========================= */
+======================================== */
 
 .imagem-amarelo {
     width: 43%;
@@ -204,12 +208,11 @@ body {
 
     align-items: center;
 
-    min-height: 260px;
+    min-height: 350px;
 }
 
-
 .imagem-amarelo img {
-    width: min(250px, 85%);
+    width: min(310px, 85%);
 
     aspect-ratio: 1 / 1;
 
@@ -222,11 +225,10 @@ body {
     z-index: 2;
 }
 
-
 .forma-verde {
     position: absolute;
 
-    width: min(250px, 90%);
+    width: min(310px, 90%);
 
     aspect-ratio: 1 / 1;
 
@@ -241,13 +243,12 @@ body {
     z-index: 1;
 }
 
-
 .imagem-amarelo::after {
     content: "";
 
     position: absolute;
 
-    width: min(160px, 55%);
+    width: min(180px, 55%);
 
     aspect-ratio: 1 / 1;
 
@@ -263,61 +264,55 @@ body {
 }
 
 
-/* =========================
+/* ========================================
    DESTAQUES
-========================= */
+======================================== */
 
 .marrom {
     background-color: #f8e8bb;
-   
 
-    padding: 10px 12px 25px;
+    padding: 30px 35px 45px;
 }
-
 
 .marrom h4 {
     color: #FFBD59;
 
-    font-size: 20px;
+    font-size: 28px;
 
     font-weight: 600;
 
-    margin: 0 0 3px 0;
+    margin: 0 0 5px 0;
 }
-
 
 .titulo-destaques {
     color: #625b5b;
 
-    font-size: 12px;
+    font-size: 17px;
 
-    margin: 0 0 12px 0;
+    margin: 0 0 25px 0;
 
     font-weight: 600;
 }
 
 
-/* =========================
+/* ========================================
    CARDS
-========================= */
+======================================== */
 
 .cards {
     display: flex;
 
     flex-direction: row;
 
-    gap: 15px;
+    gap: 22px;
 
     justify-content: space-between;
 
     width: 100%;
 }
 
-
 .card {
-    width: calc((100% - 30px) / 3);
-
-    max-width: none;
+    width: calc((100% - 44px) / 3);
 
     border: none;
 
@@ -336,7 +331,7 @@ body {
 .card img {
     width: 100%;
 
-    height: 100px;
+    height: 180px;
 
     object-fit: cover;
 
@@ -351,7 +346,7 @@ body {
 .card-info {
     background-color: #ffffff;
 
-    padding: 8px 10px 9px;
+    padding: 15px 16px 15px;
 
     position: relative;
 }
@@ -366,15 +361,15 @@ body {
 
     color: white;
 
-    font-size: 7px;
+    font-size: 12px;
 
     font-weight: bold;
 
-    padding: 3px 7px;
+    padding: 5px 10px;
 
     border-radius: 10px;
 
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 
@@ -383,11 +378,11 @@ body {
 .card-info h3 {
     color: #17130e;
 
-    font-size: 13px;
+    font-size: 20px;
 
     font-weight: bold;
 
-    margin: 0 0 3px 0;
+    margin: 0 0 7px 0;
 }
 
 
@@ -396,11 +391,11 @@ body {
 .card-info p {
     color: #333;
 
-    font-size: 8px;
+    font-size: 14px;
 
-    line-height: 1.2;
+    line-height: 1.4;
 
-    margin: 0 0 7px 0;
+    margin: 0 0 12px 0;
 }
 
 
@@ -411,7 +406,7 @@ body {
 
     color: #333;
 
-    font-size: 7px;
+    font-size: 12px;
 
     text-align: right;
 
@@ -419,9 +414,10 @@ body {
 }
 
 
-/* =========================
+/* ========================================
    SOBRE O PROJETO
-========================= */
+======================================== */
+
 
 .verde {
     background-color: #a9d19c;
@@ -432,13 +428,12 @@ body {
 
     align-items: center;
 
-    padding: 18px 15px;
+    padding: 40px 35px;
 
-    gap: 15px;
+    gap: 30px;
 
     overflow: hidden;
 }
-
 
 .folhas {
     font-size: 60px;
@@ -448,48 +443,50 @@ body {
     width: 15%;
 }
 
-
 .texto-verde {
     width: 38%;
 }
 
-
 .texto-verde p {
-    font-size: 11px;
+    font-size: 15px;
 
-    margin: 0 0 5px 0;
+    margin: 0 0 8px 0;
 }
-
 
 .texto-verde h4 {
     color: #080808;
 
-    font-size: clamp(17px, 4vw, 30px);
+    font-size: clamp(25px, 4vw, 38px);
 
-    line-height: 1;
+    line-height: 1.1;
 
     font-weight: 400;
 
     margin: 0;
 }
 
-
 .descricao-verde {
     width: 47%;
 
     color: #171717;
 
-    font-size: clamp(10px, 2vw, 18px);
+    font-size: clamp(15px, 2vw, 19px);
 
-    line-height: 1.25;
+    line-height: 1.5;
 
     margin: 0;
 }
 
 
-/* =========================
+/* ========================================
    RODAPÉ
-========================= */
+======================================== */
+
+.preto a{
+    text-decoration: none;
+
+    transition: 0.3s;
+}
 
 .preto {
     background-color: #393027;
@@ -498,113 +495,104 @@ body {
 
     flex-direction: row;
 
-    padding: 20px 15px;
+    padding: 35px 30px;
 
     color: white;
 
-    gap: 20px;
+    gap: 25px;
 
     overflow: hidden;
 }
-
 
 .rodape-coluna {
     width: 25%;
 }
 
-
 .rodape-coluna h4 {
     color: #eee7dc;
 
-    font-size: 15px;
+    font-size: 19px;
 
-    line-height: 1;
+    line-height: 1.2;
 
-    margin: 0 0 10px 0;
+    margin: 0 0 12px 0;
 }
-
 
 .rodape-coluna p {
     color: #eee7dc;
 
-    font-size: 11px;
+    font-size: 14px;
 
-    line-height: 1.4;
+    line-height: 1.5;
 
-    margin: 0 0 4px 0;
+    margin: 0 0 5px 0;
 }
-
 
 .apoio {
     border-left: 1px solid #8c8378;
 
-    padding-left: 15px;
+    padding-left: 20px;
 
     width: 25%;
 
     text-align: center;
 
-    font-size: 30px;
+    font-size: 38px;
 
     color: #eee7dc;
 }
 
-
 .apoio small {
     display: block;
 
-    font-size: 8px;
+    font-size: 13px;
 
-    line-height: 1.2;
+    line-height: 1.3;
 
     margin-top: 5px;
 }
 
 
-/* =========================
+/* ========================================
    TELAS MENORES
-========================= */
+======================================== */
 
 @media (max-width: 600px) {
 
-    .Titulo {
-        padding: 8px 8px 7px;
-    }
+    /* CABEÇALHO */
 
+    .Titulo {
+        padding: 10px 8px;
+    }
 
     .Titulo h1 {
-        font-size: 39px;
+        font-size: clamp(30px, 8vw, 39px);
     }
-
 
     .Titulo ul {
-        gap: 22px;
+        gap: 15px;
     }
-
 
     .Titulo li a {
         font-size: 11px;
     }
 
 
-    /* PARTE AMARELA */
+    /* PARTE PRINCIPAL */
 
     .amarelo {
-        padding: 25px 15px 30px;
+        padding: 30px 15px;
     }
-
 
     .texto-amarelo {
         width: 56%;
     }
 
-
     .texto-amarelo h2 {
-        font-size: 25px;
+        font-size: clamp(23px, 6vw, 32px);
 
-        margin-bottom: 20px;
+        margin-bottom: 18px;
     }
-
 
     .texto-amarelo p {
         font-size: 13px;
@@ -612,37 +600,34 @@ body {
         max-width: 190px;
     }
 
-
     .texto-amarelo button {
-        padding: 9px 15px;
+        padding: 9px 12px;
 
-        font-size: 12px;
+        font-size: 11px;
+
+        gap: 5px;
     }
-
 
     .imagem-amarelo {
         width: 44%;
 
-        min-height: 230px;
+        min-height: 180px;
     }
-
 
     .imagem-amarelo img {
-        width: 145px;
+        width: 125px;
     }
 
-
     .forma-verde {
-        width: 160px;
+        width: 140px;
 
         right: -5px;
 
         top: 15px;
     }
 
-
     .imagem-amarelo::after {
-        width: 105px;
+        width: 90px;
 
         left: -5px;
 
@@ -653,131 +638,126 @@ body {
     /* DESTAQUES */
 
     .marrom {
-        padding: 8px 7px 15px;
+        padding: 20px 12px 25px;
     }
-
 
     .marrom h4 {
-        font-size: 16px;
+        font-size: 21px;
     }
-
 
     .titulo-destaques {
-        font-size: 9px;
+        font-size: 13px;
 
-        margin-bottom: 10px;
+        margin-bottom: 18px;
     }
 
+
+    /* CARDS */
 
     .cards {
-        gap: 12px;
+        flex-direction: column;
+
+        gap: 18px;
     }
 
-
     .card {
-        width: calc((100% - 24px) / 3);
+        width: 100%;
 
         border-radius: 15px;
     }
 
-
     .card img {
-        height: 80px;
+        height: 170px;
     }
-
 
     .card-info {
-        padding: 6px 7px 7px;
+        padding: 13px 15px;
     }
-
 
     .categoria {
-        font-size: 6px;
+        font-size: 11px;
 
-        padding: 2px 5px;
+        padding: 4px 9px;
 
-        margin-bottom: 3px;
+        margin-bottom: 6px;
     }
-
 
     .card-info h3 {
-        font-size: 10px;
-
-        margin-bottom: 2px;
+        font-size: 19px;
     }
-
 
     .card-info p {
-        font-size: 6.5px;
+        font-size: 13px;
 
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 
-
     .card-info small {
-        font-size: 5.5px;
+        font-size: 11px;
     }
 
 
     /* SOBRE */
 
     .verde {
-        padding: 12px 8px;
+        padding: 25px 15px;
 
-        gap: 8px;
+        gap: 12px;
     }
-
 
     .texto-verde {
-        width: 40%;
+        width: 45%;
     }
-
 
     .texto-verde p {
-        font-size: 8px;
+        font-size: 11px;
     }
-
 
     .texto-verde h4 {
-        font-size: 14px;
+        font-size: 19px;
     }
 
-
     .descricao-verde {
-        width: 45%;
+        width: 55%;
 
-        font-size: 9px;
+        font-size: 12px;
+
+        line-height: 1.4;
     }
 
 
     /* RODAPÉ */
 
     .preto {
-        padding: 14px 10px;
+        flex-wrap: wrap;
 
-        gap: 10px;
+        padding: 22px 15px;
+
+        gap: 20px;
     }
 
+    .rodape-coluna {
+        width: calc(50% - 10px);
+    }
 
     .rodape-coluna h4 {
-        font-size: 11px;
+        font-size: 15px;
     }
-
 
     .rodape-coluna p {
-        font-size: 9px;
+        font-size: 12px;
     }
-
 
     .apoio {
+        width: calc(50% - 10px);
+
         padding-left: 8px;
 
-        font-size: 25px;
+        font-size: 30px;
     }
 
-
     .apoio small {
-        font-size: 7px;
+        font-size: 11px;
     }
 
 }
