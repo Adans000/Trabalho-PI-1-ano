@@ -235,16 +235,17 @@ button {
     justify-content: space-between;
 
     min-height: 150px;
-    padding: 20px 10%;
+    padding: 25px 10%;
 
     background-color: #273322;
-    overflow: hidden;
+    gap: 25px;
 }
 
 /* TEXTO DA ESQUERDA */
 
 .FT {
-    width: 42%;
+    width: 48%;
+    min-width: 0;
 }
 
 .FT a {
@@ -254,10 +255,11 @@ button {
 
 .FT h2 {
     font-family: Georgia, serif;
-    font-size: 50px;
-    line-height: 1;
+    font-size: 30px;
+    line-height: 1.1;
     font-weight: normal;
     margin: 0;
+    overflow-wrap: break-word;
 }
 
 .FT strong {
@@ -265,7 +267,7 @@ button {
     font-weight: bold;
 }
 
-.FT a :hover {
+.FT a:hover {
     color: #829d64;
 }
 
@@ -284,12 +286,11 @@ button {
 }
 
 .texto-chamada p {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.4;
     max-width: 280px;
     margin: 0;
 }
-
 
 /* ========================================
    FOTOS REDONDAS
@@ -603,6 +604,45 @@ footer i {
         max-width: 300px;
         line-height: 1.35;
     }
+
+    /* ========================================
+   AJUSTE PARA CELULARES
+======================================== */
+
+@media (max-width: 575px) {
+
+    .chamada-sobre {
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 25px 8%;
+        gap: 25px;
+    }
+
+    .FT {
+        width: 100%;
+    }
+
+    .FT h2 {
+        font-size: 27px;
+        line-height: 1.15;
+    }
+
+    .texto-chamada {
+        width: 100%;
+        padding: 0;
+    }
+
+    .texto-chamada h2 {
+        font-size: 30px;
+        line-height: 1.1;
+    }
+
+    .texto-chamada p {
+        font-size: 13px;
+        max-width: 100%;
+    }
+}
 
 
     /* FOTOS */
