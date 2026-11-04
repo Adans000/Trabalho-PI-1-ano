@@ -699,3 +699,43 @@ footer i {
 .card-comercio:has(.categoria-badge.rosa) .card-conteudo button:hover {
     background-color: #333;
 }
+
+/* CELULAR 2.0 denovo n aguento mais mano ;( */
+@media (max-width: 767px) {
+
+    .cabecalho {
+        padding: 12px 10px;
+    }
+
+    .cabecalho .row {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .cabecalho .row > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo {
+        font-size: 19px;
+        line-height: 18px;
+    }
+
+    .logo strong {
+        font-size: 18px;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+    }
+
+    .menu a {
+        font-size: 11px;
+    }
+}
