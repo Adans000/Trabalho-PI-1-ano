@@ -848,3 +848,37 @@ footer i {
         text-align: center;
     }
 }
+
+/*maldita florzinha*/
+
+@media (max-width: 575px) {
+
+    .precisa .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .precisa .row > .col-7,
+    .precisa .row > .col-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .folhagem {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .folhagem i {
+        position: static;
+        transform: none;
+        font-size: 35px;
+        line-height: 1;
+    }
+}
